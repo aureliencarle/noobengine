@@ -1,0 +1,133 @@
+\hypertarget{classBase}{}\section{Base Class Reference}
+\label{classBase}\index{Base@{Base}}
+
+
+{\ttfamily \#include $<$base.\+h$>$}
+
+
+
+Inheritance diagram for Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}{Base} ()
+\item 
+\hyperlink{classBase_a722da881b6c70cfcbde9243abcfbf334}{$\sim$\+Base} ()
+\item 
+void \hyperlink{classBase_ab83ee79d4522f8ad1548d5dd734a3dd5}{draw} (sf\+::\+Shader \&shader, glm\+::mat4 \&view, glm\+::mat4 \&projection, glm\+::vec3 const \&position=glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f), glm\+::vec3 const \&scale=glm\+::vec3(1.\+0f, 1.\+0f, 1.\+0f)) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBase_a57945f86e82faccbd6147f355ed17407}{setup} (std\+::vector$<$ float $>$ const \&vertices) override
+\item 
+unsigned int \hyperlink{classBase_ae1e3b63d1e2d374e1dc49a9160717cfe}{init\+Texture} (std\+::string const \&texture\+Name) override
+\item 
+unsigned int \hyperlink{classBase_ae8bcd2edd2c191d58109502792a067ab}{init\+Texture} (std\+::vector$<$ std\+::string $>$ const \&texture\+Name) override
+\item 
+void \hyperlink{classBase_ac547253cd64e7bc7e4a675eaa4e880b7}{destroy} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{classCube}{Cube} $>$, 3 $>$ \hyperlink{classBase_a1637c5b4562fa8c6eab5563ee089f948}{e}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}\label{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\subsubsection{\texorpdfstring{Base()}{Base()}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBase_a722da881b6c70cfcbde9243abcfbf334}\label{classBase_a722da881b6c70cfcbde9243abcfbf334}} 
+\index{Base@{Base}!````~Base@{$\sim$\+Base}}
+\index{````~Base@{$\sim$\+Base}!Base@{Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Base()}{~Base()}}
+{\footnotesize\ttfamily Base\+::$\sim$\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBase_ac547253cd64e7bc7e4a675eaa4e880b7}\label{classBase_ac547253cd64e7bc7e4a675eaa4e880b7}} 
+\index{Base@{Base}!destroy@{destroy}}
+\index{destroy@{destroy}!Base@{Base}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Base\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classObject_a69e91bef2c9f048aa4509329dc44948e}{Object}.
+
+\mbox{\Hypertarget{classBase_ab83ee79d4522f8ad1548d5dd734a3dd5}\label{classBase_ab83ee79d4522f8ad1548d5dd734a3dd5}} 
+\index{Base@{Base}!draw@{draw}}
+\index{draw@{draw}!Base@{Base}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Base\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Shader \&}]{shader,  }\item[{glm\+::mat4 \&}]{view,  }\item[{glm\+::mat4 \&}]{projection,  }\item[{glm\+::vec3 const \&}]{position = {\ttfamily glm\+:\+:vec3(0.0f,~0.0f,~0.0f)},  }\item[{glm\+::vec3 const \&}]{scale = {\ttfamily glm\+:\+:vec3(1.0f,~1.0f,~1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classObject_ab1ec4e4c64ac1564d9ccad7655cfaf82}{Object}.
+
+\mbox{\Hypertarget{classBase_ae1e3b63d1e2d374e1dc49a9160717cfe}\label{classBase_ae1e3b63d1e2d374e1dc49a9160717cfe}} 
+\index{Base@{Base}!init\+Texture@{init\+Texture}}
+\index{init\+Texture@{init\+Texture}!Base@{Base}}
+\subsubsection{\texorpdfstring{init\+Texture()}{initTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Base\+::init\+Texture (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classObject_a12b8309292a39b028d5a7b1dfca98cb1}{Object}.
+
+\mbox{\Hypertarget{classBase_ae8bcd2edd2c191d58109502792a067ab}\label{classBase_ae8bcd2edd2c191d58109502792a067ab}} 
+\index{Base@{Base}!init\+Texture@{init\+Texture}}
+\index{init\+Texture@{init\+Texture}!Base@{Base}}
+\subsubsection{\texorpdfstring{init\+Texture()}{initTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned int Base\+::init\+Texture (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ const \&}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classObject_ac18935ff7831cb35dc462b581d2ccf3c}{Object}.
+
+\mbox{\Hypertarget{classBase_a57945f86e82faccbd6147f355ed17407}\label{classBase_a57945f86e82faccbd6147f355ed17407}} 
+\index{Base@{Base}!setup@{setup}}
+\index{setup@{setup}!Base@{Base}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void Base\+::setup (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ const \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classObject_a262654508b0a6a8cd277911161c71024}{Object}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBase_a1637c5b4562fa8c6eab5563ee089f948}\label{classBase_a1637c5b4562fa8c6eab5563ee089f948}} 
+\index{Base@{Base}!e@{e}}
+\index{e@{e}!Base@{Base}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily std\+::array$<$std\+::unique\+\_\+ptr$<$\hyperlink{classCube}{Cube}$>$, 3$>$ Base\+::e\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{base_8h}{base.\+h}\item 
+src/\hyperlink{base_8cpp}{base.\+cpp}\end{DoxyCompactItemize}

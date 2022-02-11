@@ -1,0 +1,124 @@
+\hypertarget{classScene}{}\section{Scene Class Reference}
+\label{classScene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classScene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScene_ad10176d75a9cc0da56626f682d083507}{Scene} ()
+\item 
+void \hyperlink{classScene_abb3b6efc6fdba03cd96436edaf08a967}{init} ()
+\item 
+void \hyperlink{classScene_a8df1bf2075a891fb2929b58e85d79d34}{loop} ()
+\item 
+void \hyperlink{classScene_a3ec6a1b861488cd7ef4c31f8ac0ba3f0}{update\+Control} ()
+\item 
+void \hyperlink{classScene_a25ed345babc6bf277c57085509090f88}{update\+Object} ()
+\item 
+void \hyperlink{classScene_a1aba87f0c95af84af8aed0d7d3fb40e6}{over} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classController}{Controller} \hyperlink{classScene_aac14170851aa8186820beae6a2097bc9}{controller}
+\item 
+\hyperlink{classCamera}{Camera} \hyperlink{classScene_afed13ec4ba2d7ab75b273d507911b498}{camera}
+\item 
+std\+::unique\+\_\+ptr$<$ sf\+::\+Context\+Settings $>$ \hyperlink{classScene_a23cafa9acb6cc5caa3d3cfa001aea369}{settings}
+\item 
+std\+::unique\+\_\+ptr$<$ sf\+::\+Window $>$ \hyperlink{classScene_ab8f34017bc48b3c98e16be0ce44adf46}{window}
+\item 
+std\+::vector$<$ \hyperlink{classInstance3D}{Instance3D} $>$ \hyperlink{classScene_a04300c11c1aaaaae2019e0f9208c9252}{level}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScene_ad10176d75a9cc0da56626f682d083507}\label{classScene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classScene_abb3b6efc6fdba03cd96436edaf08a967}\label{classScene_abb3b6efc6fdba03cd96436edaf08a967}} 
+\index{Scene@{Scene}!init@{init}}
+\index{init@{init}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Scene\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classScene_a8df1bf2075a891fb2929b58e85d79d34}\label{classScene_a8df1bf2075a891fb2929b58e85d79d34}} 
+\index{Scene@{Scene}!loop@{loop}}
+\index{loop@{loop}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void Scene\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classScene_a1aba87f0c95af84af8aed0d7d3fb40e6}\label{classScene_a1aba87f0c95af84af8aed0d7d3fb40e6}} 
+\index{Scene@{Scene}!over@{over}}
+\index{over@{over}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{over()}{over()}}
+{\footnotesize\ttfamily void Scene\+::over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classScene_a3ec6a1b861488cd7ef4c31f8ac0ba3f0}\label{classScene_a3ec6a1b861488cd7ef4c31f8ac0ba3f0}} 
+\index{Scene@{Scene}!update\+Control@{update\+Control}}
+\index{update\+Control@{update\+Control}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update\+Control()}{updateControl()}}
+{\footnotesize\ttfamily void Scene\+::update\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classScene_a25ed345babc6bf277c57085509090f88}\label{classScene_a25ed345babc6bf277c57085509090f88}} 
+\index{Scene@{Scene}!update\+Object@{update\+Object}}
+\index{update\+Object@{update\+Object}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update\+Object()}{updateObject()}}
+{\footnotesize\ttfamily void Scene\+::update\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classScene_afed13ec4ba2d7ab75b273d507911b498}\label{classScene_afed13ec4ba2d7ab75b273d507911b498}} 
+\index{Scene@{Scene}!camera@{camera}}
+\index{camera@{camera}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{classCamera}{Camera} Scene\+::camera\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_aac14170851aa8186820beae6a2097bc9}\label{classScene_aac14170851aa8186820beae6a2097bc9}} 
+\index{Scene@{Scene}!controller@{controller}}
+\index{controller@{controller}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \hyperlink{classController}{Controller} Scene\+::controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a04300c11c1aaaaae2019e0f9208c9252}\label{classScene_a04300c11c1aaaaae2019e0f9208c9252}} 
+\index{Scene@{Scene}!level@{level}}
+\index{level@{level}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classInstance3D}{Instance3D}$>$ Scene\+::level\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_a23cafa9acb6cc5caa3d3cfa001aea369}\label{classScene_a23cafa9acb6cc5caa3d3cfa001aea369}} 
+\index{Scene@{Scene}!settings@{settings}}
+\index{settings@{settings}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$sf\+::\+Context\+Settings$>$ Scene\+::settings\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classScene_ab8f34017bc48b3c98e16be0ce44adf46}\label{classScene_ab8f34017bc48b3c98e16be0ce44adf46}} 
+\index{Scene@{Scene}!window@{window}}
+\index{window@{window}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$sf\+::\+Window$>$ Scene\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{scene_8h}{scene.\+h}\item 
+src/\hyperlink{scene_8cpp}{scene.\+cpp}\end{DoxyCompactItemize}

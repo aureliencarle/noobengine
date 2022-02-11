@@ -1,0 +1,56 @@
+\hypertarget{pave_8cpp}{}\section{src/pave.cpp File Reference}
+\label{pave_8cpp}\index{src/pave.\+cpp@{src/pave.\+cpp}}
+{\ttfamily \#include $<$pave.\+h$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics/\+Glsl.\+hpp$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics/\+Image.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for pave.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pave_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr float \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{P\+A\+V\+E\+\_\+\+S\+I\+ZE} = 100
+\item 
+constexpr float \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{T\+E\+XT} = \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{P\+A\+V\+E\+\_\+\+S\+I\+ZE}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{pave_8cpp_a9d56013e77711d5bbb446d481f60a8b3}{V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}\label{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}} 
+\index{pave.\+cpp@{pave.\+cpp}!P\+A\+V\+E\+\_\+\+S\+I\+ZE@{P\+A\+V\+E\+\_\+\+S\+I\+ZE}}
+\index{P\+A\+V\+E\+\_\+\+S\+I\+ZE@{P\+A\+V\+E\+\_\+\+S\+I\+ZE}!pave.\+cpp@{pave.\+cpp}}
+\subsubsection{\texorpdfstring{P\+A\+V\+E\+\_\+\+S\+I\+ZE}{PAVE\_SIZE}}
+{\footnotesize\ttfamily constexpr float P\+A\+V\+E\+\_\+\+S\+I\+ZE = 100}
+
+\mbox{\Hypertarget{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}\label{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}} 
+\index{pave.\+cpp@{pave.\+cpp}!T\+E\+XT@{T\+E\+XT}}
+\index{T\+E\+XT@{T\+E\+XT}!pave.\+cpp@{pave.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+XT}{TEXT}}
+{\footnotesize\ttfamily constexpr float T\+E\+XT = \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{P\+A\+V\+E\+\_\+\+S\+I\+ZE}}
+
+\mbox{\Hypertarget{pave_8cpp_a9d56013e77711d5bbb446d481f60a8b3}\label{pave_8cpp_a9d56013e77711d5bbb446d481f60a8b3}} 
+\index{pave.\+cpp@{pave.\+cpp}!V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE@{V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE}}
+\index{V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE@{V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE}!pave.\+cpp@{pave.\+cpp}}
+\subsubsection{\texorpdfstring{V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE}{VERTICES\_PAVE}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+P\+A\+VE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{    
+        -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT},
+         \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT}, \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT},
+         \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f,  \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT}, 0.0f,
+         \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f,  \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT}, 0.0f,
+        -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f,  \hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, 0.0f,
+        -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, -\hyperlink{pave_8cpp_a7d3b76056fb64ecff3f31e9c8f7da450}{PAVE\_SIZE},  0.0f, \hyperlink{pave_8cpp_a8008b8187ef2958b055f5f35f892ab1b}{TEXT},
+\}
+\end{DoxyCode}

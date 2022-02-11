@@ -1,0 +1,138 @@
+\hypertarget{classObject}{}\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_afe9eeddd7068a37f62d3276a2fb49864}{Object} ()=default
+\item 
+virtual \hyperlink{classObject_a226f2ae2af766b77d83c09a4d766b725}{$\sim$\+Object} ()=default
+\item 
+virtual void \hyperlink{classObject_ab1ec4e4c64ac1564d9ccad7655cfaf82}{draw} (sf\+::\+Shader \&shader, glm\+::mat4 \&view, glm\+::mat4 \&projection, glm\+::vec3 const \&position=glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f), glm\+::vec3 const \&scale=glm\+::vec3(1.\+0f, 1.\+0f, 1.\+0f))=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classObject_a262654508b0a6a8cd277911161c71024}{setup} (std\+::vector$<$ float $>$ const \&vertices)=0
+\item 
+virtual unsigned int \hyperlink{classObject_a12b8309292a39b028d5a7b1dfca98cb1}{init\+Texture} (std\+::string const \&texture\+Name)=0
+\item 
+virtual unsigned int \hyperlink{classObject_ac18935ff7831cb35dc462b581d2ccf3c}{init\+Texture} (std\+::vector$<$ std\+::string $>$ const \&texture\+Name)=0
+\item 
+virtual void \hyperlink{classObject_a69e91bef2c9f048aa4509329dc44948e}{destroy} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classObject_abb132c1ff3bc3c4115f7c48c43f67474}{vertex\+Array\+Object}
+\item 
+unsigned int \hyperlink{classObject_a2eeb21fc71ed8449cf61d36d99cb0257}{vertex\+Buffer\+Object}
+\item 
+unsigned int \hyperlink{classObject_a7ed4c3e30bec9ca76a7e820c5d3fdb6d}{texture\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classObject_afe9eeddd7068a37f62d3276a2fb49864}\label{classObject_afe9eeddd7068a37f62d3276a2fb49864}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classObject_a226f2ae2af766b77d83c09a4d766b725}\label{classObject_a226f2ae2af766b77d83c09a4d766b725}} 
+\index{Object@{Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Object()}{~Object()}}
+{\footnotesize\ttfamily virtual Object\+::$\sim$\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classObject_a69e91bef2c9f048aa4509329dc44948e}\label{classObject_a69e91bef2c9f048aa4509329dc44948e}} 
+\index{Object@{Object}!destroy@{destroy}}
+\index{destroy@{destroy}!Object@{Object}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily virtual void Object\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSkybox_a8a93bcf913a1aae88a9a4aa3d20abacc}{Skybox}, \hyperlink{classBase_ac547253cd64e7bc7e4a675eaa4e880b7}{Base}, \hyperlink{classCube_af4873f0863ce7ad4f37e4af154782a27}{Cube}, and \hyperlink{classPave_a1600213efbebd71a3612bb6812ac463b}{Pave}.
+
+\mbox{\Hypertarget{classObject_ab1ec4e4c64ac1564d9ccad7655cfaf82}\label{classObject_ab1ec4e4c64ac1564d9ccad7655cfaf82}} 
+\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Shader \&}]{shader,  }\item[{glm\+::mat4 \&}]{view,  }\item[{glm\+::mat4 \&}]{projection,  }\item[{glm\+::vec3 const \&}]{position = {\ttfamily glm\+:\+:vec3(0.0f,~0.0f,~0.0f)},  }\item[{glm\+::vec3 const \&}]{scale = {\ttfamily glm\+:\+:vec3(1.0f,~1.0f,~1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classCube_a0dfc84b5634e8c3f0fefd3482085e855}{Cube}, \hyperlink{classSkybox_a6263a420c7ec39e284342988679d3807}{Skybox}, \hyperlink{classBase_ab83ee79d4522f8ad1548d5dd734a3dd5}{Base}, and \hyperlink{classPave_a4dc3714e64f470c05726b7c7200d21e0}{Pave}.
+
+\mbox{\Hypertarget{classObject_a12b8309292a39b028d5a7b1dfca98cb1}\label{classObject_a12b8309292a39b028d5a7b1dfca98cb1}} 
+\index{Object@{Object}!init\+Texture@{init\+Texture}}
+\index{init\+Texture@{init\+Texture}!Object@{Object}}
+\subsubsection{\texorpdfstring{init\+Texture()}{initTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual unsigned int Object\+::init\+Texture (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSkybox_a0184f32862c7c46efcce78bde9ee9836}{Skybox}, \hyperlink{classBase_ae1e3b63d1e2d374e1dc49a9160717cfe}{Base}, \hyperlink{classCube_ad4e00146ffacc5d272aa0c501bee4dca}{Cube}, and \hyperlink{classPave_ae3deef5b3908954e34944051f00fea39}{Pave}.
+
+\mbox{\Hypertarget{classObject_ac18935ff7831cb35dc462b581d2ccf3c}\label{classObject_ac18935ff7831cb35dc462b581d2ccf3c}} 
+\index{Object@{Object}!init\+Texture@{init\+Texture}}
+\index{init\+Texture@{init\+Texture}!Object@{Object}}
+\subsubsection{\texorpdfstring{init\+Texture()}{initTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual unsigned int Object\+::init\+Texture (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ const \&}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSkybox_ae290e8e7374b983c153b581500cd11f3}{Skybox}, \hyperlink{classBase_ae8bcd2edd2c191d58109502792a067ab}{Base}, \hyperlink{classCube_a9ffa60b8c97c5419277b0ad2f9a3e92e}{Cube}, and \hyperlink{classPave_a00f96f2cd410ebc8d95ebc482f79f966}{Pave}.
+
+\mbox{\Hypertarget{classObject_a262654508b0a6a8cd277911161c71024}\label{classObject_a262654508b0a6a8cd277911161c71024}} 
+\index{Object@{Object}!setup@{setup}}
+\index{setup@{setup}!Object@{Object}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily virtual void Object\+::setup (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ const \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSkybox_a3f99748c514edd99809a6977f354702f}{Skybox}, \hyperlink{classBase_a57945f86e82faccbd6147f355ed17407}{Base}, \hyperlink{classCube_a107c29684289fcd3be2b1da6d297fe23}{Cube}, and \hyperlink{classPave_a1e3cc420288e7e704891cdfc2cada962}{Pave}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classObject_a7ed4c3e30bec9ca76a7e820c5d3fdb6d}\label{classObject_a7ed4c3e30bec9ca76a7e820c5d3fdb6d}} 
+\index{Object@{Object}!texture\+ID@{texture\+ID}}
+\index{texture\+ID@{texture\+ID}!Object@{Object}}
+\subsubsection{\texorpdfstring{texture\+ID}{textureID}}
+{\footnotesize\ttfamily unsigned int Object\+::texture\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classObject_abb132c1ff3bc3c4115f7c48c43f67474}\label{classObject_abb132c1ff3bc3c4115f7c48c43f67474}} 
+\index{Object@{Object}!vertex\+Array\+Object@{vertex\+Array\+Object}}
+\index{vertex\+Array\+Object@{vertex\+Array\+Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{vertex\+Array\+Object}{vertexArrayObject}}
+{\footnotesize\ttfamily unsigned int Object\+::vertex\+Array\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classObject_a2eeb21fc71ed8449cf61d36d99cb0257}\label{classObject_a2eeb21fc71ed8449cf61d36d99cb0257}} 
+\index{Object@{Object}!vertex\+Buffer\+Object@{vertex\+Buffer\+Object}}
+\index{vertex\+Buffer\+Object@{vertex\+Buffer\+Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{vertex\+Buffer\+Object}{vertexBufferObject}}
+{\footnotesize\ttfamily unsigned int Object\+::vertex\+Buffer\+Object\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{object_8h}{object.\+h}\end{DoxyCompactItemize}

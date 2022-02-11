@@ -1,0 +1,8 @@
+<map id="include/hitbox.h" name="include/hitbox.h">
+<area shape="rect" id="node2" href="$hitbox_8cpp.html" title="src/hitbox.cpp" alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node3" href="$instance3D_8h.html" title="include/instance3D.h" alt="" coords="133,80,277,107"/>
+<area shape="rect" id="node4" href="$camera_8cpp.html" title="src/camera.cpp" alt="" coords="80,155,192,181"/>
+<area shape="rect" id="node5" href="$scene_8h.html" title="include/scene.h" alt="" coords="217,155,330,181"/>
+<area shape="rect" id="node6" href="$scene_8cpp.html" title="src/scene.cpp" alt="" coords="153,229,257,256"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="scripts/main.cpp" alt="" coords="282,229,401,256"/>
+</map>

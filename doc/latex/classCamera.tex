@@ -1,0 +1,210 @@
+\hypertarget{classCamera}{}\section{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCamera_abffb81a503c7b170b6799a764d6b99cf}{Camera} (glm\+::vec3 \hyperlink{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}{position}=glm\+::vec3(10.\+0f, 10.\+0f, 10.\+0f), glm\+::vec3 up=glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f), float yaw=\+Cam\+::\+Y\+A\+W, float pitch=\+Cam\+::\+P\+I\+T\+C\+H)
+\item 
+\hyperlink{classCamera_a3537fd723fdfb5fed73a084346270cf6}{Camera} (float posX, float posY, float posZ, float upX, float upY, float upZ, float \hyperlink{classCamera_ad76701b22630f2df28a0ae15f0497a3a}{yaw}, float \hyperlink{classCamera_ab56fcb39f580e8d2159cf2c9c6d9a65a}{pitch})
+\item 
+glm\+::mat4 \hyperlink{classCamera_a5569ca5967e01d3344fbf6aba36d9820}{get\+View\+Matrix} ()
+\item 
+glm\+::mat4 \hyperlink{classCamera_af0fb989c3e781583495e50bd9f04db03}{get\+Perspective\+Matrix} (float window\+Ratio)
+\item 
+void \hyperlink{classCamera_adcddd44d57059dd24d9bfbc6f2260778}{switch\+Isometric} ()
+\item 
+void \hyperlink{classCamera_a146e9154e8593faefeb4e23a7d3d21b6}{process\+Keyboard} (\hyperlink{camera_8h_a2fc3593b03b2993ef34f3900f6be985e}{Movement} movement, float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Processes input received from any keyboard-\/like input system. Accepts input parameter in the form of camera defined Enum Class (to abstract it from windowing systems) \end{DoxyCompactList}\item 
+void \hyperlink{classCamera_a4f07e3e1263c93781fb17b104d4f4c80}{process\+Mouse\+Movement} (float x\+Offset, float y\+Offset, bool constrain\+Pitch=true)
+\item 
+void \hyperlink{classCamera_a067090ee525389944ba3bacaa62f7632}{process\+Mouse\+Scroll} (float y\+Offset)
+\item 
+void \hyperlink{classCamera_afedb32db9693443411c939438f50b565}{check\+Collision} (\hyperlink{classInstance3D}{Instance3D} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \hyperlink{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}{position}
+\item 
+glm\+::vec3 \hyperlink{classCamera_a8847cf29c9c124906ad5d97ecb5c55d1}{front}
+\item 
+glm\+::vec3 \hyperlink{classCamera_a3fe5f351380fb118ffc600591769f049}{up}
+\item 
+glm\+::vec3 \hyperlink{classCamera_aebffcc6289dd99df7554b18d00a81161}{right}
+\item 
+glm\+::vec3 \hyperlink{classCamera_a97e7a4ff433ea2bfcbfd40469aaf4d83}{world\+Up}
+\item 
+bool \hyperlink{classCamera_a2ca23fedd1347287c43a09640fc1b62f}{can\+Move}
+\item 
+float \hyperlink{classCamera_ad76701b22630f2df28a0ae15f0497a3a}{yaw}
+\item 
+float \hyperlink{classCamera_ab56fcb39f580e8d2159cf2c9c6d9a65a}{pitch}
+\item 
+float \hyperlink{classCamera_a03987cf3bbf312be16bb881939382d83}{movement\+Speed}
+\item 
+float \hyperlink{classCamera_a374b33e654bf21d19230a82672bd3aac}{mouse\+Sensitivity}
+\item 
+float \hyperlink{classCamera_a21fc9e142b104d8e94126657abaa075f}{zoom}
+\item 
+bool \hyperlink{classCamera_a64a6a08664697359c21d55a9e1239c0a}{isometric\+View}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCamera_ad424b8b92e580508caf21337b69b93fa}{update\+Camera\+Vectors} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_abffb81a503c7b170b6799a764d6b99cf}\label{classCamera_abffb81a503c7b170b6799a764d6b99cf}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position = {\ttfamily glm\+:\+:vec3(10.0f,~10.0f,~10.0f)},  }\item[{glm\+::vec3}]{up = {\ttfamily glm\+:\+:vec3(0.0f,~1.0f,~0.0f)},  }\item[{float}]{yaw = {\ttfamily \hyperlink{namespaceCam_a19ee86132ca8219870515f550db61f93}{Cam\+::\+Y\+AW}},  }\item[{float}]{pitch = {\ttfamily \hyperlink{namespaceCam_a5ba61b0ad0aa42c7887436a7f0ac5628}{Cam\+::\+P\+I\+T\+CH}} }\end{DoxyParamCaption})}
+
+Constructor with glm objects \mbox{\Hypertarget{classCamera_a3537fd723fdfb5fed73a084346270cf6}\label{classCamera_a3537fd723fdfb5fed73a084346270cf6}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{posX,  }\item[{float}]{posY,  }\item[{float}]{posZ,  }\item[{float}]{upX,  }\item[{float}]{upY,  }\item[{float}]{upZ,  }\item[{float}]{yaw,  }\item[{float}]{pitch }\end{DoxyParamCaption})}
+
+Constructor with floats 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_afedb32db9693443411c939438f50b565}\label{classCamera_afedb32db9693443411c939438f50b565}} 
+\index{Camera@{Camera}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{check\+Collision()}{checkCollision()}}
+{\footnotesize\ttfamily void Camera\+::check\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{classInstance3D}{Instance3D} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCamera_af0fb989c3e781583495e50bd9f04db03}\label{classCamera_af0fb989c3e781583495e50bd9f04db03}} 
+\index{Camera@{Camera}!get\+Perspective\+Matrix@{get\+Perspective\+Matrix}}
+\index{get\+Perspective\+Matrix@{get\+Perspective\+Matrix}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Perspective\+Matrix()}{getPerspectiveMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Camera\+::get\+Perspective\+Matrix (\begin{DoxyParamCaption}\item[{float}]{window\+Ratio }\end{DoxyParamCaption})}
+
+Returns the perspective matrix calculated using perspective and ratio of render window \mbox{\Hypertarget{classCamera_a5569ca5967e01d3344fbf6aba36d9820}\label{classCamera_a5569ca5967e01d3344fbf6aba36d9820}} 
+\index{Camera@{Camera}!get\+View\+Matrix@{get\+View\+Matrix}}
+\index{get\+View\+Matrix@{get\+View\+Matrix}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+View\+Matrix()}{getViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Camera\+::get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the view matrix calculated using Euler angles and Look\+At matrix \mbox{\Hypertarget{classCamera_a146e9154e8593faefeb4e23a7d3d21b6}\label{classCamera_a146e9154e8593faefeb4e23a7d3d21b6}} 
+\index{Camera@{Camera}!process\+Keyboard@{process\+Keyboard}}
+\index{process\+Keyboard@{process\+Keyboard}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{process\+Keyboard()}{processKeyboard()}}
+{\footnotesize\ttfamily void Camera\+::process\+Keyboard (\begin{DoxyParamCaption}\item[{\hyperlink{camera_8h_a2fc3593b03b2993ef34f3900f6be985e}{Movement}}]{movement,  }\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Processes input received from any keyboard-\/like input system. Accepts input parameter in the form of camera defined Enum Class (to abstract it from windowing systems) 
+
+\mbox{\Hypertarget{classCamera_a4f07e3e1263c93781fb17b104d4f4c80}\label{classCamera_a4f07e3e1263c93781fb17b104d4f4c80}} 
+\index{Camera@{Camera}!process\+Mouse\+Movement@{process\+Mouse\+Movement}}
+\index{process\+Mouse\+Movement@{process\+Mouse\+Movement}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{process\+Mouse\+Movement()}{processMouseMovement()}}
+{\footnotesize\ttfamily void Camera\+::process\+Mouse\+Movement (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset,  }\item[{bool}]{constrain\+Pitch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Processes input received from a mouse input system. Expects the offset value in both the x and y direction. \mbox{\Hypertarget{classCamera_a067090ee525389944ba3bacaa62f7632}\label{classCamera_a067090ee525389944ba3bacaa62f7632}} 
+\index{Camera@{Camera}!process\+Mouse\+Scroll@{process\+Mouse\+Scroll}}
+\index{process\+Mouse\+Scroll@{process\+Mouse\+Scroll}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{process\+Mouse\+Scroll()}{processMouseScroll()}}
+{\footnotesize\ttfamily void Camera\+::process\+Mouse\+Scroll (\begin{DoxyParamCaption}\item[{float}]{y\+Offset }\end{DoxyParamCaption})}
+
+Processes input received from a mouse scroll-\/wheel event. Only requires input on the vertical wheel-\/axis \mbox{\Hypertarget{classCamera_adcddd44d57059dd24d9bfbc6f2260778}\label{classCamera_adcddd44d57059dd24d9bfbc6f2260778}} 
+\index{Camera@{Camera}!switch\+Isometric@{switch\+Isometric}}
+\index{switch\+Isometric@{switch\+Isometric}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{switch\+Isometric()}{switchIsometric()}}
+{\footnotesize\ttfamily void Camera\+::switch\+Isometric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCamera_ad424b8b92e580508caf21337b69b93fa}\label{classCamera_ad424b8b92e580508caf21337b69b93fa}} 
+\index{Camera@{Camera}!update\+Camera\+Vectors@{update\+Camera\+Vectors}}
+\index{update\+Camera\+Vectors@{update\+Camera\+Vectors}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{update\+Camera\+Vectors()}{updateCameraVectors()}}
+{\footnotesize\ttfamily void Camera\+::update\+Camera\+Vectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calculates the front vector from the \hyperlink{classCamera}{Camera}\textquotesingle{}s (updated) Euler Angles 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCamera_a2ca23fedd1347287c43a09640fc1b62f}\label{classCamera_a2ca23fedd1347287c43a09640fc1b62f}} 
+\index{Camera@{Camera}!can\+Move@{can\+Move}}
+\index{can\+Move@{can\+Move}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{can\+Move}{canMove}}
+{\footnotesize\ttfamily bool Camera\+::can\+Move}
+
+\mbox{\Hypertarget{classCamera_a8847cf29c9c124906ad5d97ecb5c55d1}\label{classCamera_a8847cf29c9c124906ad5d97ecb5c55d1}} 
+\index{Camera@{Camera}!front@{front}}
+\index{front@{front}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{front}{front}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::front}
+
+\mbox{\Hypertarget{classCamera_a64a6a08664697359c21d55a9e1239c0a}\label{classCamera_a64a6a08664697359c21d55a9e1239c0a}} 
+\index{Camera@{Camera}!isometric\+View@{isometric\+View}}
+\index{isometric\+View@{isometric\+View}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{isometric\+View}{isometricView}}
+{\footnotesize\ttfamily bool Camera\+::isometric\+View}
+
+\mbox{\Hypertarget{classCamera_a374b33e654bf21d19230a82672bd3aac}\label{classCamera_a374b33e654bf21d19230a82672bd3aac}} 
+\index{Camera@{Camera}!mouse\+Sensitivity@{mouse\+Sensitivity}}
+\index{mouse\+Sensitivity@{mouse\+Sensitivity}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{mouse\+Sensitivity}{mouseSensitivity}}
+{\footnotesize\ttfamily float Camera\+::mouse\+Sensitivity}
+
+\mbox{\Hypertarget{classCamera_a03987cf3bbf312be16bb881939382d83}\label{classCamera_a03987cf3bbf312be16bb881939382d83}} 
+\index{Camera@{Camera}!movement\+Speed@{movement\+Speed}}
+\index{movement\+Speed@{movement\+Speed}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{movement\+Speed}{movementSpeed}}
+{\footnotesize\ttfamily float Camera\+::movement\+Speed}
+
+\mbox{\Hypertarget{classCamera_ab56fcb39f580e8d2159cf2c9c6d9a65a}\label{classCamera_ab56fcb39f580e8d2159cf2c9c6d9a65a}} 
+\index{Camera@{Camera}!pitch@{pitch}}
+\index{pitch@{pitch}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float Camera\+::pitch}
+
+\mbox{\Hypertarget{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}\label{classCamera_a04b5db2c530d8630660e8cfb93a4b3b5}} 
+\index{Camera@{Camera}!position@{position}}
+\index{position@{position}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::position}
+
+\mbox{\Hypertarget{classCamera_aebffcc6289dd99df7554b18d00a81161}\label{classCamera_aebffcc6289dd99df7554b18d00a81161}} 
+\index{Camera@{Camera}!right@{right}}
+\index{right@{right}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::right}
+
+\mbox{\Hypertarget{classCamera_a3fe5f351380fb118ffc600591769f049}\label{classCamera_a3fe5f351380fb118ffc600591769f049}} 
+\index{Camera@{Camera}!up@{up}}
+\index{up@{up}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::up}
+
+\mbox{\Hypertarget{classCamera_a97e7a4ff433ea2bfcbfd40469aaf4d83}\label{classCamera_a97e7a4ff433ea2bfcbfd40469aaf4d83}} 
+\index{Camera@{Camera}!world\+Up@{world\+Up}}
+\index{world\+Up@{world\+Up}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{world\+Up}{worldUp}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::world\+Up}
+
+\mbox{\Hypertarget{classCamera_ad76701b22630f2df28a0ae15f0497a3a}\label{classCamera_ad76701b22630f2df28a0ae15f0497a3a}} 
+\index{Camera@{Camera}!yaw@{yaw}}
+\index{yaw@{yaw}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float Camera\+::yaw}
+
+\mbox{\Hypertarget{classCamera_a21fc9e142b104d8e94126657abaa075f}\label{classCamera_a21fc9e142b104d8e94126657abaa075f}} 
+\index{Camera@{Camera}!zoom@{zoom}}
+\index{zoom@{zoom}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{zoom}{zoom}}
+{\footnotesize\ttfamily float Camera\+::zoom}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{camera_8h}{camera.\+h}\item 
+src/\hyperlink{camera_8cpp}{camera.\+cpp}\end{DoxyCompactItemize}
